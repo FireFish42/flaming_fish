@@ -8,13 +8,13 @@
     overflow-y: hidden;
 }
 
-.landing .img-container {
+.img-container {
     margin: -30px auto 50px auto;
     max-width: 500px;
     min-width: 300px;
 }
 
-.landing .img-container img {
+.img-container img {
     display: block;
     width: 75%;
     border-radius: 50%;
@@ -22,14 +22,14 @@
     padding-top: 30px;
 }
 
-.landing .btn-container {
+.btn-container {
     margin: 0 auto;
     max-width: 500px;
     min-width: 300px;
     height: 100%;
 }
 
-.landing .btn-container button {
+.btn-container button {
     display: block;
     margin: 2.75rem auto;
     padding: 12px 24px;
@@ -43,7 +43,7 @@
     transition: 0.5s;
 }
 
-.landing .btn-container button#left:focus {
+button#left:focus, button#left:hover {
     font-style: italic;
     color: #c02209;
     font-size: 1.8rem;
@@ -51,7 +51,7 @@
     background-color: rgba(7, 6, 9, 0.8);      
 }
 
-.landing .btn-container button#right:focus {
+button#right:focus, button#right:hover {
     font-weight: 500;
     color: #669725;
     font-size: 1.8rem;
@@ -59,11 +59,11 @@
     background-color: rgba(163, 52, 178, 0.431);
 }
 
-.landing .btn-container button#left {
+button#left {
     font-family: "Andika New Basic", sans-serif;
 }
 
-.landing .btn-container button#right {
+button#right {
     font-family: "Montserrat", sans-serif;
     line-height: 1.55;
 }
@@ -97,5 +97,5 @@
 /* Media Queries */
 @media only screen and (max-height: 460px){
     .landing { overflow-y: scroll }
-    .landing .img-container img { max-width: 200px }
+    .img-container img { max-width: 200px }
 }
