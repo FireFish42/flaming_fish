@@ -1,3 +1,4 @@
+/* Landing */ 
 .landing {
     height: 100%;
     background-image: url("../media/landing_background.png");
@@ -39,12 +40,13 @@
     background-color: rgb(80, 81, 81);
     color: white;
     border: black 3px solid;
+    transition: 0.5s;
 }
 
 .landing .btn-container button#left:focus {
     font-style: italic;
     color: #c02209;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: 0;
     background-color: rgba(7, 6, 9, 0.8);      
 }
@@ -52,7 +54,7 @@
 .landing .btn-container button#right:focus {
     font-weight: 500;
     color: #669725;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: 0;
     background-color: rgba(163, 52, 178, 0.431);
 }
@@ -66,6 +68,31 @@
     line-height: 1.55;
 }
 
+/* Fire (Projects) */
+.fire {
+    background-color: #ebebeb;
+    transition: 0.5s;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+}
+
+/* Fish (About) */
+.fish {
+    background-color: #ebebeb;
+    transition: 0.5s;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+}
 
 /* Media Queries */
 @media only screen and (max-height: 460px){
