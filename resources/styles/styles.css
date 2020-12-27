@@ -1,0 +1,60 @@
+.landing {
+    height: 100%;
+    background-image: url("../media/landing_background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.landing .img-container {
+    margin: -30px auto 50px auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.landing .img-container img {
+    display: block;
+    width: 75%;
+    border-radius: 50%;
+    margin: 30px auto;
+    padding-top: 30px;
+}
+
+.landing .btn-container {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    height: 100%;
+}
+
+.landing .btn-container button {
+    display: block;
+    margin: 2.75rem auto;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(80, 81, 81);
+    color: white;
+    border: black 3px solid;
+}
+
+.landing .btn-container button:focus { font-size: 2rem }
+
+.landing .btn-container button#left {
+    font-family: "Andika New Basic", sans-serif;
+}
+
+.landing .btn-container button#right {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.55;
+}
+
+
+/* Media Queries */
+@media only screen and (max-height: 460px){
+    .landing { overflow-y: scroll }
+    .landing .img-container img { max-width: 200px }
+}
