@@ -41,7 +41,21 @@
     border: black 3px solid;
 }
 
-.landing .btn-container button:focus { font-size: 2rem }
+.landing .btn-container button#left:focus {
+    font-style: italic;
+    color: #c02209;
+    font-size: 2rem;
+    border: 0;
+    background-color: rgba(7, 6, 9, 0.8);      
+}
+
+.landing .btn-container button#right:focus {
+    font-weight: 500;
+    color: #669725;
+    font-size: 2rem;
+    border: 0;
+    background-color: rgba(163, 52, 178, 0.431);
+}
 
 .landing .btn-container button#left {
     font-family: "Andika New Basic", sans-serif;
