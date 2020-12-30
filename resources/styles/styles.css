@@ -1,11 +1,12 @@
 /* Landing */ 
 .landing {
     height: 100%;
-    background-image: url("../media/landing_background.png");
+    background-image: url("../media/landing_background2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
+    transition: 0.5s;
 }
 
 .img-container {
@@ -70,7 +71,10 @@ button#right {
 
 /* Fire (Projects) */
 .fire {
-    background-color: #ebebeb;
+    background-image: url("../media/notebook_right.jpg");
+    background-position: left;
+    background-size:contain;
+    background-repeat: no-repeat;
     transition: 0.5s;
     z-index: 1;
     width: 0%;
@@ -81,9 +85,26 @@ button#right {
     overflow-x: hidden;
 }
 
+.fire aside {
+    border: 3px solid mediumaquamarine;
+    height: 100%;
+    float: left;
+    width: 35%;
+}
+
+.fire div.content {
+    border: 3px solid magenta;
+    float: right;
+    height: 100%;
+    width: 65%;
+}
+
 /* Fish (About) */
 .fish {
-    background-color: #ebebeb;
+    background-image: url("../media/notebook_left.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: 0.5s;
     z-index: 1;
     width: 0%;
@@ -92,6 +113,19 @@ button#right {
     right: 0;
     top: 0;
     overflow-x: hidden;
+}
+
+.fish aside {
+    border: 3px solid mediumaquamarine;
+    height:100%;
+    float: right;
+    width: 35%;
+}
+.fish div.content {
+    border: 3px solid magenta;
+    float: left;
+    height: 100%;
+    width: 65%;
 }
 
 /* Media Queries */

@@ -19,8 +19,10 @@ toFishVar.addEventListener("click", toFish);
 
 function toFire() {
     document.getElementById("fire").style.width = "100%";
+    document.getElementById("landing").style.display = "none";
 }
 
 function toFish() {
     document.getElementById("fish").style.width = "100%";
+    document.getElementById("landing").style.display = "none";
 }
