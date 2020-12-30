@@ -1,12 +1,11 @@
 /* Landing */ 
 .landing {
     height: 100%;
-    background-image: url("../media/landing_background2.jpg");
+    background-image: url("../media/landing.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
-    transition: 0.5s;
 }
 
 .img-container {
@@ -38,7 +37,7 @@
     outline: 0;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(80, 81, 81);
+    background-color: #505151;
     color: white;
     border: black 3px solid;
     transition: 0.5s;
@@ -46,10 +45,10 @@
 
 button#left:focus, button#left:hover {
     font-style: italic;
-    color: #c02209;
+    color: rgb(192, 34, 9);
     font-size: 1.8rem;
     border: 0;
-    background-color: rgba(7, 6, 9, 0.8);      
+    background-color: #070609;      
 }
 
 button#right:focus, button#right:hover {
@@ -57,7 +56,7 @@ button#right:focus, button#right:hover {
     color: #669725;
     font-size: 1.8rem;
     border: 0;
-    background-color: rgba(163, 52, 178, 0.431);
+    background-color: #a334b2;
 }
 
 button#left {
@@ -71,10 +70,6 @@ button#right {
 
 /* Fire (Projects) */
 .fire {
-    background-image: url("../media/notebook_right.jpg");
-    background-position: left;
-    background-size:contain;
-    background-repeat: no-repeat;
     transition: 0.5s;
     z-index: 1;
     width: 0%;
@@ -101,10 +96,6 @@ button#right {
 
 /* Fish (About) */
 .fish {
-    background-image: url("../media/notebook_left.jpg");
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
     transition: 0.5s;
     z-index: 1;
     width: 0%;
