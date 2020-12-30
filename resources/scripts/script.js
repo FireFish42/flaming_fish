@@ -35,7 +35,7 @@ let toLandingVar = document.getElementById("return");
 toLandingVar.addEventListener("keyup", function(event) {
     if (KeyboardEvent.key === "Enter" || KeyboardEvent.key === " ") {
         event.preventDefault();
-        toFireVar.click();
+        toLandingVar.click();
     }
 });
 toLandingVar.addEventListener("click", toLanding);
