@@ -45,7 +45,7 @@
 
 button#left:focus, button#left:hover {
     font-style: italic;
-    color: rgb(192, 34, 9);
+    color: #c02209;
     font-size: 1.8rem;
     border: 0;
     background-color: #070609;      
@@ -64,36 +64,70 @@ button#left {
 }
 
 button#right {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", serif;
     line-height: 1.55;
 }
 
 /* Fire (Projects) */
 .fire {
-    transition: 0.5s;
+    font-family: "Andika New Basic", sans-serif;
     z-index: 1;
-    width: 0%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100%;
 }
 
-.fire aside {
-    border: 3px solid mediumaquamarine;
-    height: 100%;
-    float: left;
-    width: 35%;
+.fire img#fire-img{
+    width: 0%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .fire div.content {
-    border: 3px solid magenta;
-    float: right;
-    height: 100%;
     width: 65%;
+    height: 100%;
+    position: absolute;
+    height: 100%;
+    padding-left: 20px;
+    top: 0;
+    right: 0;
+    /*overflow-y: scroll;*/
 }
 
+.fire h1 { font-size: 3rem }
+.fire h2 {
+    font-size: 2rem;
+    border-left: solid 2px #c02209;
+    margin: 20px 0;
+}
+
+.fire div.flexbox {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.fire div.flexbox img {
+    min-width: 175px;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.fire span {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-left: 2px dotted #c02209;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #ebebeb;
+}
 /* Fish (About) */
 .fish {
     transition: 0.5s;
@@ -119,8 +153,24 @@ button#right {
     width: 65%;
 }
 
+
+
 /* Media Queries */
 @media only screen and (max-height: 460px){
     .landing { overflow-y: scroll }
     .img-container img { max-width: 200px }
+}
+
+@media only screen and (max-width: 1322px) {
+    .fire img#fire-img { visibility: hidden }
+    .fire div.content { width: 100% }
+}
+@media only screen and (max-width: 487px) {
+    .fire h1 { font-size: 1.5rem }
+
+    .fire h2 { font-size: 1rem; border: 0; }
+    
+    .fire div.content { text-align: center }
+
+    .fire div.flexbox { justify-content: center;}
 }
