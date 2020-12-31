@@ -27,10 +27,13 @@ function toFire() {
 function toFish() {
     document.getElementById("fish").style.width = "100%";
     document.getElementById("landing").style.width = "0%";
+    document.getElementById("fish-img").style.width = "35%";
+    document.getElementById("return-fish").hidden = false;
 }
 
 
 let toLandingVar = document.getElementById("return");
+let toLandingVar2 = document.getElementById("return-fish");
 
 toLandingVar.addEventListener("keyup", function(event) {
     if (KeyboardEvent.key === "Enter" || KeyboardEvent.key === " ") {
@@ -40,9 +43,20 @@ toLandingVar.addEventListener("keyup", function(event) {
 });
 toLandingVar.addEventListener("click", toLanding);
 
+toLandingVar2.addEventListener("keyup", function(event) {
+    if (KeyboardEvent.key === "Enter" || KeyboardEvent.key === " ") {
+        event.preventDefault();
+        toLandingVar2.click();
+    }
+});
+toLandingVar2.addEventListener("click", toLanding);
+
 function toLanding() {
     document.getElementById("fire").style.width = "0%";
+    document.getElementById("fish").style.width = "0%";
     document.getElementById("fire-img").style.width = "0%";
+    document.getElementById("fish-img").style.width = "0%";
     document.getElementById("landing").style.width = "100%";
     document.getElementById("return").hidden = true;
+    document.getElementById("return-fish").hidden = true;
 }

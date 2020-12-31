@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/927d156370.js" crossorigin="anonymous" async></script>
+
         <link rel="stylesheet" href="resources/styles/reset.css" type="text/css">
         <link rel="stylesheet" href="resources/styles/styles.css" type="text/css">
 
@@ -23,26 +25,26 @@
     <body>
         <section id="landing" class="landing" role="presentation">
             <div class="img-container">
-                <img src="resources/media/logo.png" alt="Website Logo" role="presentation">
+                <img src="resources/media/logo.png" alt="Website Logo" aria-hidden="true">
             </div>
-            <div class="btn-container">
+            <div class="btn-container" role="presentation">
                 <button role="button" id="left">&#9664; Explore the Fire</button>
                 <button role="button" id="right">Invoke the Fish &#9654;</button>
             </div>
         </section>
         <section id="fire" class="fire" role="presentation">
-            <img id="fire-img" src="resources/media/fire.jpg" alt="" role="presentation">
+            <img id="fire-img" src="resources/media/fire.jpg" alt="" aria-hidden="true">
             <div class="content" role="presentation">
                 <h1>Projects</h1>
                 <h2>Codecademy Related Projects</h2>
-                <div class="flexbox">
+                <div class="flexbox" role="presentation">
                     <a tabindex="0" href="https://firefish42.github.io/mixed_messages/" target="_blank"><img src="resources/media/mixed_messages_screen.png" alt="Link to Mixed Messages Website"></a>
                     <a tabindex="0" href="https://firefish42.github.io/club_website/" target="_blank"><img src="resources/media/club_screen.png" alt="Link to the Foresters Club Website"></a>
 
                 </div>
 
                 <h2>The Fish's Own Inspiration</h2>
-                <div class="flexbox">
+                <div class="flexbox" role="presentation">
                     <a tabindex="0" href="" target="_blank"><img src="resources/media/portfolio_screen.png" alt="Link to my portfolio; this page!"></a>
                     
                 </div>
@@ -51,6 +53,39 @@
             </div>
         </section>
         <section id="fish" class="fish" role="presentation">
+            <img id="fish-img" src="resources/media/fish.jpg" alt="" aria-hidden="true">
+            <div class="content">
+                <div class="image">
+                    <address>
+                        Talk to the Fish:
+                        <a href="https://github.com/FireFish42" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="mailto:will.houghton42@gmail.com" target="_blank">will.houghton42@gmail.com</a>
+                    </address>
+                    <figure>
+                        <img src="resources/media/firefish42.jpeg" alt="FireFish42 taking a hike through trees" role="img">
+                        <figcaption>The Fish Himself</figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="text-container">
+                    <h1>About the Fish</h1>
+                    <p><em>His Actual Name is Will,</em> but no one else really knows that. Mostly, he stays to himself, drinking coffee and enjoying nature. Interestingly enough, he doesn't actually enjoy seafood. <br><br> <em>Why the Username?</em> Good question. FireFish42 just seemed to fit. <br><br> He's been programming and developing websites for over two years, but never actually made himself known until around 2020. Definately go check out his work on the other page!</p>
+
+                    <h2>The Fish's Skills</h2>
+                    <div class="skills">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+
+                <span tabindex="0" role="button" id="return-fish" class="return-fish" hidden>Go back</span>
+            </div>
         </section>
 
         <script src="resources/scripts/script.js"></script>
