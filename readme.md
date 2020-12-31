@@ -23,7 +23,7 @@ Project is created with:
 - Unhealthy amounts of coffee
 
 # Launch
-Click [this link](https://google.com/)!
+Click [this link](https://firefish42.github.io/flaming_fish/)!
 
 # Sources
 This projects is related to the [Codecademy Pro](https://codecademy.com/) Full-Stack Engineer career path. It's meant to be a capstone project of HTML, JavaScript, and CSS integration.
