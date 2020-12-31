@@ -234,7 +234,8 @@ div.text-container h2 { margin: 20px 0 }
     .img-container img { max-width: 200px }
 }
 
-@media only screen and (max-width: 1322px) {
+
+@media only screen and (max-width: 1322px), (min-height: 733px) {
     .fire img#fire-img, .fish img#fish-img { visibility: hidden }
     .fire div.content, .fish div.content { width: 100% }
 }
@@ -246,4 +247,24 @@ div.text-container h2 { margin: 20px 0 }
     .fire div.content { text-align: center }
 
     .fire div.flexbox { justify-content: center;}
+}
+
+@media only screen and (max-width: 869px) {
+    .fish .image {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1 1;
+    }
+
+    .fish address { 
+        grid-row-start: 2; 
+        grid-column-start: 1;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .fish figure {
+        grid-row-start: 1; 
+        grid-column-start: 1;
+        margin: 20px auto;
+    }
 }
